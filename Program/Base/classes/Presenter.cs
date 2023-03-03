@@ -43,7 +43,7 @@ namespace GIT_C.Program.Base.classes
             dataProcessor.checkBirthday(dataParseProcessor.getBirthday());
             //Check sex
             dataProcessor.checkSex(dataParseProcessor.getSex());
-            System.Console.WriteLine("\nAll checks are OK!!!");
+            System.Console.WriteLine("\nВсе проверки в порядке!!!");
             // Write data to file
             fileWriter.writeToFile(dataParseProcessor.getInfoToWrite());
         }
