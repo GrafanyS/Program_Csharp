@@ -12,7 +12,7 @@ namespace GIT_C.Program.Base.classes.WorkWithFile
         private object? file;
 
         /**
-        * Создает новый файл по указанному пути.
+        * Создать новый файл по указанному пути.
         * @param path - путь плюс имя файла и расширение.
         * @return - возвращает true в случае удачного создания.
         */
@@ -22,7 +22,7 @@ namespace GIT_C.Program.Base.classes.WorkWithFile
         public override bool createFile(string path)
         {
             try {
-                using (var file = File.OpenRead(path))
+                using var file = File.OpenRead(path);
                 }
             catch (FileCreateException)
             {
