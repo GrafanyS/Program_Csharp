@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace GIT_C.Program.Base.Interface
 {
+    // Интерфейс контрольный элемент
     public interface ICheckElement
     {
-        
+        public Boolean checkElement(String data);
     }
 }
