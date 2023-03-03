@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class ParseDataToIntegerException : IOException
     {
-        
+        public ParseDataToIntegerException(string message)
+            : base(message)
+        {}
     }
 }

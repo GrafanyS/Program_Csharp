@@ -7,6 +7,9 @@ namespace GIT_C.Program.Base.Exception
 {
     public class MyFileCreateException : IOException
     {
+        public MyFileCreateException(string massage)
+            : base(massage)
         
+        {}
     }
 }

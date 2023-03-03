@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class FullNameContainsDigitException : FormatException
     {
-        
+        public FullNameContainsDigitException(string message)
+            : base(message)
+        {}
     }
 }

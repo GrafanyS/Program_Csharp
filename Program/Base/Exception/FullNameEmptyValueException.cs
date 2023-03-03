@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class FullNameEmptyValueException : FormatException
     {
-        
+        public FullNameEmptyValueException(string message)
+            : base(message)
+        {}
     }
 }

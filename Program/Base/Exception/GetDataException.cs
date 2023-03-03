@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class GetDataException : FormatException
     {
-        
+        public GetDataException(string message)
+            : base(message)
+        {}
     }
 }

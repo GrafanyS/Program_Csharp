@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class CheckSexException : FormatException
     {
-        
+        public CheckSexException(string message)
+            : base(message)
+        {}
     }
 }

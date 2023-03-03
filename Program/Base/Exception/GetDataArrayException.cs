@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class GetDataArrayException : FormatException
     {
-        
+        public GetDataArrayException(string message)
+            : base(message)
+        {}
     }
 }

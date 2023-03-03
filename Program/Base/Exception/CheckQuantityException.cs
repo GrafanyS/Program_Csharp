@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class CheckQuantityException : IOException
     {
-        
+        public CheckQuantityException(string message)
+            : base(message)
+        {}
     }
 }

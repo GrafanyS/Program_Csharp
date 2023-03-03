@@ -7,6 +7,8 @@ namespace GIT_C.Program.Base.Exception
 {
     public class IncorrectSexValuesException : IOException
     {
-        
+        public IncorrectSexValuesException(string message)
+            : base(message)
+        {}
     }
 }
