@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace GIT_C.Program.Base.Exception
 {
+    // То же исключение при записи файла
     using GIT_C.Program.Base.Interface;
     public class TheSameFileWritingException : IOException
     {
