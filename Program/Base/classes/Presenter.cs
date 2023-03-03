@@ -4,8 +4,10 @@ using GIT_C.Program.Base.classes.ParseDate;
 
 namespace GIT_C.Program.Base.classes
 {
-
-    /**
+    
+    public class Presenter
+    {
+        /**
      * Объединяет в работу пользовательский интерфейс, парсер строки, проверку на валидность элементов строки
      * Пишет в файлы инфо по заданному формату.
      * @param getData - пользовательский интерфейс.
@@ -13,8 +15,6 @@ namespace GIT_C.Program.Base.classes
      * @param dataProcessor - проверка элементов на валидность
      * @param fileWriter - пишет в файл согласно условию.
      */
-    public class Presenter
-    {
         private CGetData getData;
         private CDataParseProcessor dataParseProcessor;
         private ACheckDataProcessor dataProcessor;
