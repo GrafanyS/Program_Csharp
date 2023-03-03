@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace GIT_C.Program.Base.Exception
 {
+    // Полное имя, считанное из исключения данных
     public class FullNameReadFromDataException : FormatException
     {
         public FullNameReadFromDataException(string message)
