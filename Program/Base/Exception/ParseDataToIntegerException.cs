@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace GIT_C.Program.Base.Exception
 {
+    // Преобразовать Данные в Целочисленное Исключение
     public class ParseDataToIntegerException : IOException
     {
         public ParseDataToIntegerException(string message)
