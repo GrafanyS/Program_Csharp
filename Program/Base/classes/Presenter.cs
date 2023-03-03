@@ -1,6 +1,8 @@
 using GIT_C.Program.Base.AbstractClasses;
 using GIT_C.Program.Base.classes.ui;
 using GIT_C.Program.Base.classes.ParseDate;
+using GIT_C.Program.Base.classes.CheckinputData;
+using GIT_C.Program.Base.classes.WorkWithFile;
 
 namespace GIT_C.Program.Base.classes
 {
@@ -19,18 +21,26 @@ namespace GIT_C.Program.Base.classes
         private CDataParseProcessor dataParseProcessor;
         private ACheckDataProcessor dataProcessor;
         private AFileWriter fileWriter;
+        private CGetData cGetData;
+        private CDataParseProcessor cDataParseProcessor;
+        private CCheckDataProcessor cCheckDataProcessor;
+        private CFileWriter cFileWriter;
 
-        public Presenter(CGetData getData,
-                     CDataParseProcessor dataParseProcessor,
-                     ACheckDataProcessor dataProcessor,
-                     AFileWriter fileWriter)
-                     {
-                        this.getData = getData;
-                        this.dataParseProcessor = dataParseProcessor;
-                        this.dataProcessor = dataProcessor;
-                        this.fileWriter = fileWriter;
-                     }
+        public Presenter(CGetData getData, CDataParseProcessor dataParseProcessor, ACheckDataProcessor dataProcessor, AFileWriter fileWriter)
+        {
+            this.getData = getData;
+            this.dataParseProcessor = dataParseProcessor;
+            this.dataProcessor = dataProcessor;
+            this.fileWriter = fileWriter;
+        }
 
+        public Presenter(CGetData cGetData, CDataParseProcessor cDataParseProcessor, CCheckDataProcessor cCheckDataProcessor, CFileWriter cFileWriter)
+        {
+            this.cGetData = cGetData;
+            this.cDataParseProcessor = cDataParseProcessor;
+            this.cCheckDataProcessor = cCheckDataProcessor;
+            this.cFileWriter = cFileWriter;
+        }
 
         public void run()
         {

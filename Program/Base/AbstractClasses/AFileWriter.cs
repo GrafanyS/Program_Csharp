@@ -8,9 +8,6 @@ namespace GIT_C.Program.Base.AbstractClasses
 {
     public abstract class AFileWriter : IWriteToFile
     {
-        public bool writeToFile(string[] infoToWrite)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract bool writeToFile(string[] infoToWrite);
     }
 }

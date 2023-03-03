@@ -8,6 +8,6 @@ namespace GIT_C.Program.Base.AbstractClasses
 {
     public abstract class ACheckQuantity : ICheckQuantity
     {
-        
+        public abstract bool checkQuantity(string[] data);
     }
 }

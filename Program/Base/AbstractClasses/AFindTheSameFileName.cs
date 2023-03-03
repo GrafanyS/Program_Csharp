@@ -8,6 +8,6 @@ namespace GIT_C.Program.Base.AbstractClasses
 {
     public abstract class AFindTheSameFileName : IFindTheSameFileName
     {
-        
+        public abstract bool findTheSameFileName(string lastName, string pathFolder);
     }
 }

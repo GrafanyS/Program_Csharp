@@ -8,6 +8,6 @@ namespace GIT_C.Program.Base.AbstractClasses
 {
     public abstract class AFileCreator : ICreateFile
     {
-        
+        public abstract bool createFile(string path);
     }
 }

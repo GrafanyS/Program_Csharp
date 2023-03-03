@@ -6,8 +6,8 @@ using GIT_C.Program.Base.Interface;
 
 namespace GIT_C.Program.Base.AbstractClasses
 {
-    public class APresenter : IRun
+    public abstract class APresenter : IRun
     {
-        
+        public abstract void run();
     }
 }

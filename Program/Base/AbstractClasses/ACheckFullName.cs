@@ -8,6 +8,6 @@ namespace GIT_C.Program.Base.AbstractClasses
 {
     public abstract class ACheckFullName : ICheckFullName
     {
-        
+        public abstract bool checkFullName(string[] fullName);
     }
 }

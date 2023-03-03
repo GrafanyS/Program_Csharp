@@ -6,8 +6,8 @@ using GIT_C.Program.Base.Interface;
 
 namespace GIT_C.Program.Base.AbstractClasses
 {
-    public abstract class AGetData :IGetData
+    public abstract class AGetData : IGetData
     {
-        
+        public abstract string getData();
     }
 }
