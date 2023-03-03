@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace GIT_C.Program.Base.Exception
 {
+    // Проверьте исключение пола
     public class CheckSexException : FormatException
     {
         public CheckSexException(string message)
