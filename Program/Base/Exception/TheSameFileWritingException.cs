@@ -9,7 +9,10 @@ namespace GIT_C.Program.Base.Exception
     using GIT_C.Program.Base.Interface;
     public class TheSameFileWritingException : IOException
     {
-        public TheSameFileWritingException(){}
+        public TheSameFileWritingException()
+        {
+            System.Console.WriteLine("Файл не найден: " + message);
+        }
         public TheSameFileWritingException(string massage)
             : base(massage)
             {}
