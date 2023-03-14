@@ -11,7 +11,7 @@ namespace GIT_C.Program.Base.Exception
     {
         public TheSameFileWritingException()
         {
-            System.Console.WriteLine("Файл не найден: " + message);
+            System.Console.WriteLine("Файл не найден: " + Message);
         }
         public TheSameFileWritingException(string massage)
             : base(massage)
