@@ -10,7 +10,7 @@ namespace GIT_C.Program.Base.Exception
     {
         public ParseDataException()
         {
-            System.Console.WriteLine("Исключение в цикле, во время синтаксического анализа: " + message);
+            System.Console.WriteLine("Исключение в цикле, во время синтаксического анализа: " + Message);
         }
         public ParseDataException(string message)
             : base(message)
