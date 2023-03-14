@@ -10,7 +10,7 @@ namespace GIT_C.Program.Base.Exception
     {
         public ParseDataToIntegerException()
         {
-            System.Console.WriteLine("Не удалось преобразовать строку в целое число!: " + massage);
+            System.Console.WriteLine("Не удалось преобразовать строку в целое число!: " + Message);
         }
         public ParseDataToIntegerException(string message)
             : base(message)
