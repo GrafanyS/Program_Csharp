@@ -8,6 +8,7 @@ namespace GIT_C.Program.Base.Exception
     // Исключение для анализа данных
     public class ParseDataException : IOException
     {
+        public ParseDataException(){}
         public ParseDataException(string message)
             : base(message)
         
