@@ -10,7 +10,7 @@ namespace GIT_C.Program.Base.Exception
     {
         public MyFileCreateException()
         {
-            System.Console.WriteLine("Не удается создать файл в CFileCreator: " + message);
+            System.Console.WriteLine("Не удается создать файл в CFileCreator: " + Message);
         }
         public MyFileCreateException(string massage)
             : base(massage)
