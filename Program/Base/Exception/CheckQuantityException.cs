@@ -8,6 +8,7 @@ namespace GIT_C.Program.Base.Exception
     // Исключение из проверки количества
     public class CheckQuantityException : IOException
     {
+        public CheckQuantityException(){}
         public CheckQuantityException(string message)
             : base(message)
         {}

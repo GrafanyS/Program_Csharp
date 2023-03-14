@@ -8,6 +8,7 @@ namespace GIT_C.Program.Base.Exception
     // Исключение формата дня рождения exception
     public class BirthdayFormatException : FormatException
     {
+        public BirthdayFormatException(){}
         public BirthdayFormatException(string message)
             : base(message)
         {}

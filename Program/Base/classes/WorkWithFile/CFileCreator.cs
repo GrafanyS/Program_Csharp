@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,25 +10,35 @@ namespace GIT_C.Program.Base.classes.WorkWithFile
 {
     public class CFileCreator : AFileCreator
     {
-        private object? file;
+        /// <summary>
+        /// Constructor for CFileCreator
+        /// Создать новый файл по указанному пути.
+        /// </summary>
+        /// <param name="path">- путь плюс имя файла и расширение.</param>
+        /// <return>- возвращает true в случае удачного создания.</return>
 
-        /**
-        * Создать новый файл по указанному пути.
-        * @param path - путь плюс имя файла и расширение.
-        * @return - возвращает true в случае удачного создания.
-        */
 
         
-        public virtual bool CreateFile(string path);
+        // public virtual bool createFile(string path);
+
         public override bool createFile(string path)
         {
-            try {
-                using var file = File.OpenRead(path);
-                }
-            catch (FileCreateException)
-            {
-                throw;                
-            }
+            throw new FileCreateException("Файл не создан:");
         }
+        // public override bool createFile(string path)
+        // {
+        //     try {
+        //         using (FileStream file = File.Create(path))
+        //         {
+
+        //         }
+        //         }
+        //     catch (FileCreateException)
+        //     {
+        //         throw new FileCreateException("Файл не создан:");                
+        //     }
+        // }
+
+
     }
 }

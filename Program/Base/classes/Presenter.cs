@@ -9,30 +9,33 @@ namespace GIT_C.Program.Base.classes
     
     public class Presenter
     {
-        /**
-     * Объединяет в работу пользовательский интерфейс, парсер строки, проверку на валидность элементов строки
-     * Пишет в файлы инфо по заданному формату.
-     * @param getData - пользовательский интерфейс.
-     * @param dataParseProcessor - парсер строки.
-     * @param dataProcessor - проверка элементов на валидность
-     * @param fileWriter - пишет в файл согласно условию.
-     */
-        private CGetData getData;
-        private CDataParseProcessor dataParseProcessor;
-        private ACheckDataProcessor dataProcessor;
-        private AFileWriter fileWriter;
-        private CGetData cGetData;
-        private CDataParseProcessor cDataParseProcessor;
-        private CCheckDataProcessor cCheckDataProcessor;
-        private CFileWriter cFileWriter;
+        /// <summary>
+        /// Инициализирует новый экземпляр класса Presenter
+        /// Объединяет в работу пользовательский интерфейс, парсер строки, проверку на валидность элементов строки
+        /// Пишет в файлы инфо по заданному формату.
+        /// </summary>
+        /// <param name="getData ">- пользовательский интерфейс.</param>
+        /// <param name="dataParseProcessor"> - парсер строки.</param>
+        /// <param name="dataProcessor"> - проверка элементов на валидность</param>
+        /// <param name="fileWriter"> - пишет в файл согласно условию.</param>
+        /// <returns></returns>
 
-        public Presenter(CGetData getData, CDataParseProcessor dataParseProcessor, ACheckDataProcessor dataProcessor, AFileWriter fileWriter)
-        {
-            this.getData = getData;
-            this.dataParseProcessor = dataParseProcessor;
-            this.dataProcessor = dataProcessor;
-            this.fileWriter = fileWriter;
-        }
+        private CGetData getData{ get; set; }
+        private CDataParseProcessor dataParseProcessor{ get; set; }
+        private ACheckDataProcessor dataProcessor{ get; set; }
+        private AFileWriter fileWriter{ get; set; }
+        private CGetData cGetData{ get; set; }
+        private CDataParseProcessor cDataParseProcessor{ get; set; }
+        private CCheckDataProcessor cCheckDataProcessor{ get; set; }
+        private CFileWriter cFileWriter{ get; set; }
+
+        // public Presenter(CGetData getData, CDataParseProcessor dataParseProcessor, ACheckDataProcessor dataProcessor, AFileWriter fileWriter)
+        // {
+        //     this.getData = getData;
+        //     this.dataParseProcessor = dataParseProcessor;
+        //     this.dataProcessor = dataProcessor;
+        //     this.fileWriter = fileWriter;
+        // }
 
         public Presenter(CGetData cGetData, CDataParseProcessor cDataParseProcessor, CCheckDataProcessor cCheckDataProcessor, CFileWriter cFileWriter)
         {

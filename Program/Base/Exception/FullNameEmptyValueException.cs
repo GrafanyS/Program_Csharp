@@ -8,6 +8,7 @@ namespace GIT_C.Program.Base.Exception
     // Полное имя Исключение пустого значения
     public class FullNameEmptyValueException : FormatException
     {
+        public FullNameEmptyValueException(){}
         public FullNameEmptyValueException(string message)
             : base(message)
         {}
